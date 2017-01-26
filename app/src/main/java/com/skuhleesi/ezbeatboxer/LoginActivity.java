@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -28,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         signUpLink.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent signUpIntent = new Intent(LoginActivity.this, SignUpActivity.class);
+                Intent signUpIntent = new Intent(LoginActivity.this, SignupActivity.class);
                 LoginActivity.this.startActivity(signUpIntent);
             }
         });
